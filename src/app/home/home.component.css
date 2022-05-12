@@ -1,0 +1,12 @@
+img
+{
+    width: 100%;
+}
+#vertbt
+{
+    writing-mode: vertical-lr;
+    background-color: grey;
+    height: 290px;
+    text-align: center;
+    transition: width 2s,transform 2s;
+}

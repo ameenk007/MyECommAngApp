@@ -1,0 +1,64 @@
+#nav
+{
+  font-family:sans-serif;
+  z-index: 1;
+}
+.dropdown-menu
+{
+    min-width: 900px;
+    border-radius: 20px;
+    padding: 15%;
+}
+#ligr
+{
+    margin-right: 15%;
+}
+#colwid
+{
+    min-width:max-content;
+}
+#group
+{
+    background: none;
+    border: transparent;
+    min-width:max-content;
+}
+        a:link
+        {
+            color:rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        a:visited
+        {
+            color:rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        a:active
+        {
+            color:rgb(0, 0, 0);
+        }
+        a:hover
+        {
+            color:rgb(143, 138, 138);
+            background-color:transparent;
+        }
+li
+{
+    list-style: none;
+}
+#div1
+{
+    min-width: fit-content;
+    max-width: 600px;
+    margin-left: auto;
+}
+#srchbt
+{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#inp
+{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius:25px;
+}

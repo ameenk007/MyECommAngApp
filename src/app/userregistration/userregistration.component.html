@@ -1,0 +1,63 @@
+<!-- <div class="container">
+    <table class="table table-responsive" >
+        <thead>
+            <tr>
+                <th>UserId</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>UserName </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let u of allUsers |async;">
+                <td> {{u.id}}</td>
+                <td> {{u.Name}}</td>
+                <td> {{u.Email}}</td>
+                <td> {{u.Gender}}</td>
+                <td> {{u.Username}}</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <!--Creating a user using Web API (Create Operation -> POST)-->
+    <div id="card" class="container">      
+        <div class="row">    
+            <div class="form_bg"> 
+                <!--accessing onSubmit() from user-registration.component.ts-->               
+                <form [formGroup]="userForm" (ngSubmit)="onSubmit()">    
+                     <h2>Registration page</h2>  
+                    <br/>  
+                    <div id="input" class="form-group"> 
+                        <label for="name">Name</label>   
+                        <input type="text" class="form-control"  
+                        formControlName="Name">     
+                    </div>
+                    <div class="radio" *ngFor="let gender of Gender">
+                    <label>
+                      <input formControlName="Gender"
+                        type="radio"
+                        [value]="gender">{{ gender }}
+                    </label>
+                  </div>
+                    <div id="input" class="form-group"> 
+                        <label for="Email">Email</label>   
+                        <input type="text" class="form-control" formControlName="Email">     
+                    </div>
+                    <div id="input" class="form-group"> 
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" 
+                        formControlName="Username">    
+                       </div>
+                       <div id="input" class="form-group"> 
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" 
+                        formControlName="Password">    
+                       </div>                     
+                    <br>
+                    <div class="align-center">  
+                        <button type="submit" 
+                        class="btn btn-primary" id="register">Register</button>   
+                    </div>  <br>
+                </form>
+            </div>
+        </div>
